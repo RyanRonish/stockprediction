@@ -18,4 +18,5 @@ data = yf.download('V',
 data["Date"] = data.index
 data = data[["Date", "Open", "High", "Low", "Close", "Adj Close", "Volume"]]
 data.reset_index(drop=True, inplace=True)
-data.tail()
+
+print(data.tail())
