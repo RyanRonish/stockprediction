@@ -11,7 +11,7 @@ d2 = date.today() - timedelta(days=5000)
 d2 = d2.strftime("%Y-%m-%d")
 start_date = d2
 
-data = yf.download('V',
+data = yf.download('AAPL',
                    start=start_date,
                    end=end_date,
                    progress=False)
