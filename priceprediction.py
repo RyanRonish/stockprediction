@@ -68,3 +68,4 @@ import numpy as np
 #features = [Open, High, Low, Adj Close, Volume]
 features = np.array([[177.089996, 180.419998, 177.070007, 74919600]])
 model.predict(features)
+print(model.predict(features))
