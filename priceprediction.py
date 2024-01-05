@@ -31,3 +31,6 @@ figure = go.Figure(data=[go.Candlestick(x=data["Date"],
 figure.update_layout(title = "Stock Price Analysis",
                      xaxis_rangeslider_visible=False)
 figure.show()
+
+correlation = data.corr()
+print(correlation["Close"].sort_values(ascending=False))
