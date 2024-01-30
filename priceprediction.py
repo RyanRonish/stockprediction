@@ -66,6 +66,6 @@ model.fit(xtrain, ytrain, batch_size=1, epochs=30)
 
 import numpy as np
 #features = [Open, High, Low, Adj Close, Volume]
-features = np.array([[181.99, 182.76, 180.17, 61911861]])
+features = np.array([[190.85, 191.76, 187.17, 52153000]])
 model.predict(features)
 print(model.predict(features))
